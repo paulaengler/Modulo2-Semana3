@@ -1,0 +1,98 @@
+<!-- 
+[M2S03] Ex.1 - Criar uma página de perfil pessoal utilizando as principais tags HTML
+Nesse exercício, você deve criar uma página utilizando as principais tags HTML, 
+sendo semântico e que inclua um cabeçalho com o seu nome, uma imagem de perfil, uma seção sobre, e uma lista de hard skills e/ou soft skills.
+Requisitos:
+Tags como <header>, main <img>,<p>,<ul>,<li>,<h1>,<h2>, etc.
+Estrutura semântica e bem organizada.
+No link abaixo, você encontrará uma referência útil para se inspirar. No entanto, sinta-se à vontade para explorar outros modelos ou criar o seu próprio. 
+Uma dica é buscar referências no Behance, Pinterest - Brasil , Dribbble e Figma community.
+Referência: User Profile by Paresh Khatri on Dribbble
+Além disso, que tal melhorar esse exercício criando um portfólio que apresente os principais projetos já desenvolvidos por você no GitHub?
+
+
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Cristina Engler Ribeiro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+
+        <div class="card-topo">
+            <div class="card">
+                <!-- <img src="fundo-3d.png" alt="Imagem de fundo"> -->
+            </div>
+        </div>
+
+        <div class="topo">
+            <img class="foto" alt="Paula" src="Paula.png">
+            <h1 class="nome">Paula Cristina Engler Ribeiro</h1>
+            <h2 class="descricao">Farmacêutica estudando front-end</h2>               
+            <h2 class="dados">paulaengler@live.com</h2>
+            <h2 class="dados">https://github.com/paulaengler</h2>
+            <h3 class="perfil">@paula_engler_ribeiro - Jun 2024</h3>
+        </div>
+
+        <div class="quadros">
+            <div class="seguidores">1000 followers</div>
+            <div class="seguidores">1500 following</div>
+            <button type="follow">Follow</button>
+            <button type="resume">Resume</button>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li class="lista">Sobre</li>
+                <li class="lista">Contatos</li>
+                <li class="lista">Hard-Skills</li>
+                <li class="lista">Soft-Skills</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="box">
+            <h3 class="about">Sobre</h3> 
+            <p class="sobre">Olá, perfil pessoal para apresentação</p>
+        </div>
+
+        <div class="box">
+            <h3 class="about">Contatos</h3> 
+            <p class="sobre">Olá, perfil pessoal para apresentação</p>
+        </div>
+
+        <div class="box">
+            <ul>
+                <h3 class="about">Hard-Skills</h3>
+                <li class="sobre">Conhecimento básico JavaScript</li>
+                <li class="sobre">Conhecimento básico HTML e CSS</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <ul>
+                <h3 class="about">Soft-Skills</h3>
+                <li class="sobre">Comprometimento</li>
+                <li class="sobre">Colaboração</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <p class="final">Atualizado em Junho/2024</p>
+    </div>
+
+
+</body>
+</html>

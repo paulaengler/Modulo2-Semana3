@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: aquamarine;
+    min-height: 100%;
+    box-sizing: content-box;
+}
+
+.card {
+    width: 50%;
+    height: 50%;
+    background-image: url('fundo-3d.png'); 
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 
+<div class="header">
+
+<div class="card-topo">
+    <div class="card"></div>
+</div>
+
+<div class="topo">
+    <img class="foto" alt="Paula" src="Paula.png">
+    <h1 class="nome">Paula Cristina Engler Ribeiro</h1>
+    <h2 class="descricao">Farmacêutica estudando front-end</h2>               
+    <h2 class="dados">paulaengler@live.com</h2>
+    <h2 class="dados">https://github.com/paulaengler</h2>
+    <h3 class="perfil">@paula_engler_ribeiro - Jun 2024</h3>
+</div>
+
+<div class="quadros">
+    <div class="seguidores">1000 followers</div>
+    <div class="seguidores">1500 following</div>
+    <button type="follow">Follow</button>
+    <button type="resume">Resume</button>
+</div>
+
+<div class="menu">
+    <ul>
+        <li class="lista">Sobre</li>
+        <li class="lista">Contatos</li>
+        <li class="lista">Hard-Skills</li>
+        <li class="lista">Soft-Skills</li>
+    </ul>
+</div>
+</div>
+
+<div class="container">
+
+<div class="box">
+    <h3 class="about">Sobre</h3> 
+    <p class="sobre">Olá, perfil pessoal para apresentação</p>
+</div>
+
+<div class="box">
+    <h3 class="about">Contatos</h3> 
+    <p class="sobre">Olá, perfil pessoal para apresentação</p>
+</div>
+
+<div class="box">
+    <ul>
+        <h3 class="about">Hard-Skills</h3>
+        <li class="sobre">Conhecimento básico JavaScript</li>
+        <li class="sobre">Conhecimento básico HTML e CSS</li>
+    </ul>
+</div>
+
+<div class="box">
+    <ul>
+        <h3 class="about">Soft-Skills</h3>
+        <li class="sobre">Comprometimento</li>
+        <li class="sobre">Colaboração</li>
+    </ul>
+</div>
+
+</div>
+
+
+<div class="footer">
+<p class="final">Atualizado em Junho/2024</p>
+</div> */
