@@ -10,16 +10,38 @@ Uma dica é buscar referências no Behance, Pinterest - Brasil , Dribbble e Figm
 Referência: User Profile by Paresh Khatri on Dribbble
 Além disso, que tal melhorar esse exercício criando um portfólio que apresente os principais projetos já desenvolvidos por você no GitHub?
 
+[M2S03] Ex. 2 - Melhorando a Estrutura Semântica e Metadados de um Projeto HTML
+Neste exercício, você deve criar ou utilizar um projeto existente e melhorá-lo utilizando HTML semântico. Além disso, você deve incluir metadados apropriados no header para aprimorar a indexação do seu site pelos mecanismos de busca.
 
+Implementação de HTML Semântico:
 
+Revise a estrutura do seu documento HTML e substitua as tags genéricas (como <div> e <span>) por tags semânticas adequadas.
+Exemplos de tags semânticas incluem <header>, <nav>, <article>, <section>, <footer>, entre outras.
+Inclusão de Metadados no Head:
+
+Adicione metadados relevantes na seção <head> do seu documento HTML.
+Use a tag <meta> para especificar informações como descrição do site, palavras-chave, autor do conteúdo e configurações de viewport.
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Descrição breve do seu site">
+  <meta name="keywords" content="HTML, CSS, JavaScript, SEO">
+  <meta name="author" content="Seu Nome">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título do Seu Projeto</title>
+</head>
+Aproveita e inclua a metadatas de Open Graph, como títulos, imagem e etc.
 
  -->
 
+<!--  
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="apresentacao Paula">
+    <meta name="apresentação,contato,email" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Paula Cristina Engler Ribeiro">
     <title>Paula Cristina Engler Ribeiro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -27,13 +49,10 @@ Além disso, que tal melhorar esse exercício criando um portfólio que apresent
     <div class="header">
 
         <div class="card-topo">
-            <div class="card">
-                <!-- <img src="fundo-3d.png" alt="Imagem de fundo"> -->
-            </div>
         </div>
 
         <div class="topo">
-            <img class="foto" alt="Paula" src="Paula.png">
+            <img class="foto" alt="Paula" src="Paula1.png">
             <h1 class="nome">Paula Cristina Engler Ribeiro</h1>
             <h2 class="descricao">Farmacêutica estudando front-end</h2>               
             <h2 class="dados">paulaengler@live.com</h2>
@@ -44,8 +63,8 @@ Além disso, que tal melhorar esse exercício criando um portfólio que apresent
         <div class="quadros">
             <div class="seguidores">1000 followers</div>
             <div class="seguidores">1500 following</div>
-            <button type="follow">Follow</button>
-            <button type="resume">Resume</button>
+            <button class="botao">Follow</button>
+            <button class="botao">Resume</button>
         </div>
 
         <div class="menu">
@@ -60,31 +79,31 @@ Além disso, que tal melhorar esse exercício criando um portfólio que apresent
 
     <div class="container">
         
-        <div class="box">
+        <article class="box">
             <h3 class="about">Sobre</h3> 
             <p class="sobre">Olá, perfil pessoal para apresentação</p>
-        </div>
+        </article>
 
-        <div class="box">
+        <section class="box">
             <h3 class="about">Contatos</h3> 
-            <p class="sobre">Olá, perfil pessoal para apresentação</p>
-        </div>
+            <p class="sobre">paulaengler@live.com</p>
+        </section>
 
-        <div class="box">
+        <article class="box">
             <ul>
                 <h3 class="about">Hard-Skills</h3>
                 <li class="sobre">Conhecimento básico JavaScript</li>
                 <li class="sobre">Conhecimento básico HTML e CSS</li>
             </ul>
-        </div>
+        </article>
 
-        <div class="box">
+        <article class="box">
             <ul>
                 <h3 class="about">Soft-Skills</h3>
                 <li class="sobre">Comprometimento</li>
                 <li class="sobre">Colaboração</li>
             </ul>
-        </div>
+        </article>
 
     </div>
 
@@ -94,5 +113,47 @@ Além disso, que tal melhorar esse exercício criando um portfólio que apresent
     </div>
 
 
+</body>
+</html>
+
+-->
+
+
+
+<!-- 
+[M2S03] Ex. 3 - Interação com o Usuário usando prompt e confirm 
+Neste exercício, você vai criar uma aplicação web que interage com o usuário utilizando as funções prompt e confirm do navegador. 
+O objetivo é praticar a captura de entradas do usuário e a exibição de mensagens baseadas nas escolhas feitas.
+Passos para o Exercício:
+Criar um Documento HTML Básico:
+Crie um arquivo HTML e adicione uma estrutura básica com um botão. Este botão será usado para iniciar a interação com o usuário.
+Adicionar um Arquivo JavaScript:
+Crie um arquivo JavaScript e adicione a lógica de interação com o usuário. Utilize o prompt para pedir ao usuário que 
+insira o nome e o confirm para perguntar se ele quer continuar com a interação.
+Testar a Aplicação:
+Abra o arquivo HTML no navegador e clique no botão para ver a sequência de prompts e confirms.
+Resultado Esperado:
+Interação com prompt:
+Quando o botão for clicado, o navegador deve exibir uma janela de prompt pedindo ao usuário para inserir seu nome.
+Interação com confirm:
+Após o usuário inserir o nome, o navegador deve exibir uma janela de confirmação perguntando se o usuário deseja continuar.
+Resposta com base nas Escolhas do Usuário:
+Se o usuário confirmar, uma mensagem de continuação será exibida.
+Se o usuário cancelar, uma mensagem de encerramento será exibida.
+Se o usuário não inserir um nome no prompt inicial, uma mensagem de erro será exibida.
+Para exibir mensagens de erro ou confirmação, utilize o alert ou manipule o DOM para mostrar um alerta personalizado. 
+Nesse caso, será necessário utilizar classList.add e classList.remove.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com o usuário</title>
+</head>
+<body>
+    <h1>Interação com o usuário</h1>
+    <button id="startButton">Clique para iniciar</button>
+    <script src="index.js"></script>
 </body>
 </html>
