@@ -1,3 +1,23 @@
+
+
+/*
+var lista = document.createElement("ul");
+
+var itens = ["Camiseta, valor: 29.99", "Calça Jeans, valor: 49.99", "Tênis, valor: 79.99", "Boné, valor: 14.99"]
+itens.forEach(function(item){
+    var li = document.createElement("li");
+    li.innerHTML = item;
+    lista.append(li);
+})
+document.body.append(lista)
+
+1
+var texto = document.createTextNode('item da lista adicionado');
+elemento.appendChild(texto);
+var lista = document.getElementByTagName('ul')[0];
+lista.appendChild(elemento);
+
+2
 const produtos = [
     { nome: "Camiseta", valor: 29.99 },
     { nome: "Calça Jeans", valor: 49.99 },
@@ -24,4 +44,4 @@ function renderizarProdutos() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', renderizarProdutos);
+document.addEventListener('DOMContentLoaded', renderizarProdutos); */

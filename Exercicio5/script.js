@@ -1,4 +1,7 @@
-document.getElementById('adicionar-tarefa').addEventListener('click', function() {
+
+/*
+
+ document.getElementById('adicionar-tarefa').addEventListener('click', function() {
     const input = document.getElementById('nova-tarefa');
     const tarefa = input.value.trim();
 

@@ -10,7 +10,7 @@ Modificar o DOM para adicionar elementos e modificar o elemento.
 Uso de métodos DOM como document.getElementById, document.querySelector, element.innerHTML, element.style, etc.
 ‌
 
-Imagem de referência disponível na capa, no entanto, sinta-se à vontade para criar seu próprio estilo. -->
+Imagem de referência disponível na capa, no entanto, sinta-se à vontade para criar seu próprio estilo. 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,5 +28,74 @@ Imagem de referência disponível na capa, no entanto, sinta-se à vontade para 
         <ul id="lista-tarefas"></ul>
     </div>
     <script src="script.js"></script>    
+</body>
+</html> -->
+
+<!DOCTYPE html> <!-- Declaro o tipo de documento como HTML5 -->
+<html lang="pt"> <!-- Defino que o idioma do documento é português -->
+<head>
+    <meta charset="UTF-8"> <!-- Defino a codificação de caracteres para UTF-8 -->
+    <title>Local Session DOM Render</title> <!-- Específico o título da página -->
+    <link rel="stylesheet" href="styles.css">  <!-- Incluo o link para o arquivo CSS externo -->
+</head>
+<body>
+    <h1 id="titulo">Dúvidas Tutoria 12/06/2024</h1> <!-- Crio um cabeçalho principal para a página -->
+    
+    <input type="text" id="tarefaInput" placeholder="Adicione uma nova tarefa"> <!-- Crio um campo de entrada de texto para novas tarefas -->
+    <button id="adicionarTarefa">Adicionar Tarefa</button> <!-- Adiciono um botão para adicionar uma nova tarefa -->
+    <ul id="listaDeTarefas"></ul> <!-- Defino uma lista não ordenada para as tarefas -->
+    
+
+    <script>
+   
+        // Função para adicionar tarefas
+        document.getElementById('adicionarTarefa').addEventListener('click', adicionarTarefa);
+
+        function adicionarTarefa() {
+            var input = document.getElementById('tarefaInput');
+            var novaTarefa = input.value;
+            if (novaTarefa.trim() === '') {
+                alert('Por favor, digite uma tarefa!');
+                return;
+            }
+
+            var lista = document.getElementById('listaDeTarefas');
+            var item = document.createElement('li');
+            item.textContent = novaTarefa;
+            item.addEventListener('click', function() {
+                lista.removeChild(item);
+                salvarTarefas();
+            });
+
+            lista.appendChild(item);
+            salvarTarefas();
+            input.value = ''; // Limpo o campo de entrada
+        }
+
+        function salvarTarefas() {
+            var tarefas = [];
+            document.querySelectorAll('#listaDeTarefas li').forEach(function(item) {
+                tarefas.push(item.textContent);
+            });
+            localStorage.setItem('tarefas', JSON.stringify(tarefas));
+        }
+
+        function carregarTarefas() {
+            var tarefas = JSON.parse(localStorage.getItem('tarefas') || '[]');
+            tarefas.forEach(function(tarefa) {
+                var item = document.createElement('li');
+                item.textContent = tarefa;
+                document.getElementById('listaDeTarefas').appendChild(item);
+                item.addEventListener('click', function() {
+                    item.parentNode.removeChild(item);
+                    salvarTarefas();
+                });
+            });
+        }
+
+        carregarTarefas(); // Carrego as tarefas salvas no Local Storage ao carregar a página
+
+     
+    </script>
 </body>
 </html>

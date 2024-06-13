@@ -1,4 +1,99 @@
+
+/* estilos.css */
+
+/* Aplico estilos básicos ao corpo do documento */
 body {
+    font-family: 'Arial', sans-serif;  /* Escolho Arial como a fonte do texto, com sans-serif como fallback */
+    background-color: #f4f4f4;        /* Defino a cor de fundo de todo o corpo como cinza claro */
+    margin: 0;                        /* Removo a margem padrão do corpo */
+    padding: 20px;                    /* Adiciono um preenchimento de 20px em todos os lados do corpo */
+    display: flex;                    /* Utilizo Flexbox para controlar o layout do corpo */
+    flex-direction: column;           /* Alinho os itens em uma coluna vertical */
+    align-items: center;              /* Centralizo os itens horizontalmente dentro do corpo */
+}
+
+/* Defino estilos para o cabeçalho h1 */
+h1 {
+    color: #333;                      /* Escolho um cinza escuro para a cor do texto do cabeçalho */
+}
+
+/* Aplico estilos que afetam tanto inputs quanto botões */
+input, button {
+    padding: 10px;                    /* Adiciono preenchimento de 10px em todas as direções */
+    margin: 5px;                      /* Adiciono uma margem de 5px em todas as direções */
+    border-radius: 5px;               /* Arredondo as bordas com um raio de 5px */
+    border: 2px solid #ccc;           /* Incluo uma borda sólida de 2px com cor cinza claro */
+}
+
+/* Especifico estilos para botões */
+button {
+    background-color: #4CAF50;        /* Defino a cor de fundo dos botões como um verde vivo */
+    color: white;                     /* Faço o texto do botão branco para contrastar com o fundo */
+    cursor: pointer;                  /* Altero o cursor para indicar que o botão é clicável */
+    border: none;                     /* Removo a borda dos botões */
+}
+
+/* Estabeleço estilos para o estado hover dos botões */
+button:hover {
+    background-color: #45a049;        /* Escureço a cor de fundo do botão quando o mouse está sobre ele */
+}
+
+/* Defino estilo específico para o input de tarefas */
+#tarefaInput {
+    width: 300px;                     /* Estabeleço a largura do input de tarefas para 300px */
+}
+
+/* Aplico estilos para a lista não ordenada */
+ul {
+    list-style-type: none;            /* Removo os marcadores de itens da lista */
+    padding: 0;                       /* Elimino o preenchimento padrão da lista */
+}
+
+/* Defino estilos para os itens da lista */
+li {
+    background-color: #ffffff;        /* Defino a cor de fundo dos itens da lista para branco */
+    border: 1px solid #ddd;           /* Adiciono uma borda sólida de 1px cinza claro */
+    margin-top: -1px;                 /* Elimino o espaço entre os itens da lista */
+    padding: 10px;                    /* Adiciono preenchimento de 10px em todas as direções */
+    cursor: pointer;                  /* Mudo o cursor para indicar que o item é clicável */
+}
+
+/* Aplico estilos para o estado hover dos itens da lista */
+li:hover {
+    background-color: #f5f5f5;        /* Mudo a cor de fundo dos itens da lista ao passar o mouse */
+}
+
+/* Estabeleço estilos para os cards */
+.card {
+    background-color: #fff;           /* Faço a cor de fundo dos cards branca */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adiciono sombra ao redor do card para efeito 3D */
+    transition: 0.3s;                 /* Adiciono uma transição suave para mudanças de estilo */
+    width: 300px;                     /* Defino a largura do card para 300px */
+    margin-bottom: 15px;              /* Adiciono uma margem inferior de 15px */
+    padding: 15px;                    /* Incluo um preenchimento de 15px em todas as direções */
+    border-radius: 10px;              /* Arredondo as bordas do card com um raio de 10px */
+}
+
+/* Especifico estilos para o estado hover dos cards */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3); /* Intensifico a sombra quando o mouse está sobre o card */
+}
+
+/* Defino estilos para o container dos cards */
+#cardContainer {
+    display: flex;                    /* Uso Flexbox para controlar o layout dos cards */
+    flex-direction: column;           /* Organizo os cards em uma coluna */
+    align-items: center;              /* Centralizo os cards horizontalmente */
+}
+
+
+
+
+
+
+
+
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
@@ -47,3 +142,4 @@ li .valor {
     font-weight: bold;
     color: #000;
 }
+    */

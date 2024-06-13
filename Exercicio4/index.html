@@ -10,8 +10,6 @@ const produtos = [
     { nome: "Tênis", valor: 79.99 },
     { nome: "Boné", valor: 14.99 }
 ];
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,10 +21,46 @@ const produtos = [
 <body>
     <div class="container">
         <h1>Lista de produtos</h1>
-        <ul id="produtos"></ul>
     </div>
 
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 
 </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<!-- Declaro o tipo de documento como HTML5 -->
+<html lang="pt">
+  <!-- Defino que o idioma do documento é português -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Defino a codificação de caracteres para UTF-8 -->
+    <title>Local Session DOM Render</title>
+    <!-- Específico o título da página -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Incluo o link para o arquivo CSS externo -->
+  </head>
+  <body>
+    <h1 id="titulo">tutoria</h1>
+    <!-- Crio um cabeçalho principal para a página -->
+    <div id="cardContainer" style="margin-top: 20px"></div>
+    <!-- Crio um contêiner para os cards com uma margem superior -->
+
+    <script>
+      // Renderização de um loop de cards com JavaScript
+      const produtos = [
+        { nome: "Camiseta", valor: 29.99 },
+        { nome: "Calça Jeans", valor: 49.99 },
+        { nome: "Tênis", valor: 79.99 },
+        { nome: "Boné", valor: 14.99 },
+      ];
+
+      const container = document.getElementById("cardContainer");
+      produtos.forEach((produto) => {
+        const card = `<div class='card' style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><h2>${produto.nome}</h2><p>${produto.valor}</p></div>`;
+        container.innerHTML += card; // Adiciono cada card ao container
+      });
+    </script>
+  </body>
 </html>
